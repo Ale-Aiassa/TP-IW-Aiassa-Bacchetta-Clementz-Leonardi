@@ -1,0 +1,1 @@
+web: cd Proyecto_Ing_Web && gunicorn Proyecto.wsgi --log-file -
