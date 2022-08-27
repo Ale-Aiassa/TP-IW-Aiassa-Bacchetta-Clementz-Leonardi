@@ -1,0 +1,4 @@
+.venv
+*.pyc
+db.sqlite3
+Proyecto_Ing_Web/templates/images
