@@ -1,17 +1,20 @@
 {% extends 'base.html' %}
 
 {% block title %}Home{% endblock %}
+
 {% block content %}
+
 {% if user.is_authenticated %}
   Hi {{ user.username }}!
   <p><a href="{% url 'logout' %}">LogOut</a></p>
+  <a href="{% url 'SecondPage' %}"> Segunda Pagina</a>
 {% else %}
   <p>You are not logged in</p>
   <a href="{% url 'login' %}">Log In</a>
   <br>
   <a href="{% url 'signup' %}">Registrate</a>
+  <br>
+  <a href="{% url 'signup' %}"> Segunda Pagina</a>
 {% endif %}
 
-<br>
-<a href="{% url 'SecondPage' %}">Segunda Pagina</a>
 {% endblock %}

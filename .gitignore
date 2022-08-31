@@ -1,4 +1,5 @@
 .venv
 *.py[cod]
-db.sqlite3
 *$py.class
+db.sqlite3
+Proyecto_Ing_Web/venv/
