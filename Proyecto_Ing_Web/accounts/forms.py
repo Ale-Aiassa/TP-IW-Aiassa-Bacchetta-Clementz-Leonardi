@@ -13,6 +13,6 @@ class UsuarioForm(forms.ModelForm):
 
 class Registro(UserCreationForm):
     pass
-    class Meta:
-        model = Usuario
-        fields = ["nombre", "apellido", "username", "correo"]
+#    class Meta:
+#        model = Usuario
+#        fields = ["nombre", "apellido", "username", "correo"]

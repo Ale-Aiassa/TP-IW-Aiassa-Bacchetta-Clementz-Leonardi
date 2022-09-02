@@ -28,11 +28,11 @@ def signup(request):
         formulario = Registro(data=request.POST)
         if formulario.is_valid():
             formulario.save()
-            Usuario = authenticate(username=formulario.cleaned_data["username"], password=formulario.cleaned_data["password"])
-            login(request, Usuario)
+            #Usuario = authenticate(username=formulario.cleaned_data["username"], password=formulario.cleaned_data["password"])
+            #login(request, Usuario)
             #Message.success(request, "Registro exitoso")
             #redirigir al home
-            return redirect(to="SecondPage")
+            #return redirect(to="SecondPage") funciona
         data["form"] = formulario
     return render(request, 'registration/signup.html', data)
 
